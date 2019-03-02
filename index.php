@@ -1,3 +1,10 @@
+<?php
+  session_start();
+  include 'server.php';
+
+?>
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -18,11 +25,13 @@
   <link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
   <!-- Libraries CSS Files -->
-  <link href="lib/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+  <!-- <link href="lib/font-awesome/css/font-awesome.min.css" rel="stylesheet"> -->
   <link href="lib/animate/animate.min.css" rel="stylesheet">
   <link href="lib/ionicons/css/ionicons.min.css" rel="stylesheet">
   <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
   <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
+
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
 
   <!-- Main Stylesheet File -->
   <link href="css/style.css" rel="stylesheet">
@@ -559,18 +568,24 @@
       <div class="container">
 
         <header class="section-header">
-          <h3>Our Clients</h3>
+          <h3>Our Expertise</h3>
         </header>
 
         <div class="owl-carousel clients-carousel">
-          <img src="img/clients/client-1.png" alt="">
-          <img src="img/clients/client-2.png" alt="">
-          <img src="img/clients/client-3.png" alt="">
-          <img src="img/clients/client-4.png" alt="">
-          <img src="img/clients/client-5.png" alt="">
-          <img src="img/clients/client-6.png" alt="">
-          <img src="img/clients/client-7.png" alt="">
-          <img src="img/clients/client-8.png" alt="">
+           <i class="fab fa-html5"></i>
+           <i class="fab fa-css3-alt"></i>
+           <i class="fas fab fa-bold"></i>
+           <i class="fab fa-js-square"></i>
+           <i class="fab fa-angular"></i>
+           <i class="fab fa-react"></i>
+           <i class="fab fa-php"></i>
+           <i class="fab fa-laravel"></i>
+           <i class="fab fa-java"></i>
+           <i class="fab fa-free-code-camp"></i>
+           <i class="fas fab fa-database"></i>
+           <i class="fab fa-android"></i>
+           <i class="fab fa-python"></i>
+
         </div>
 
       </div>
@@ -779,7 +794,7 @@
         <div class="form">
           <div id="sendmessage">Your message has been sent. Thank you!</div>
           <div id="errormessage"></div>
-          <form action="" method="post" role="form" class="contactForm">
+          <form action="mailer.php" method="post" role="form" class="contactForm">
             <div class="form-row">
               <div class="form-group col-md-6">
                 <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
@@ -815,12 +830,12 @@
       <div class="container">
         <div class="row">
 
-          <div class="col-lg-3 col-md-6 footer-info">
+          <div class="col-lg-4 col-md-6 footer-info">
             <h3>Lotus Technologies</h3>
             <!-- <p>Cras fermentum odio eu feugiat lide par naso tierra. Justo eget nada terra videa magna derita valies darta donna mare fermentum iaculis eu non diam phasellus. Scelerisque felis imperdiet proin fermentum leo. Amet volutpat consequat mauris nunc congue.</p> -->
           </div>
 
-          <div class="col-lg-3 col-md-6 footer-links">
+          <div class="col-lg-4 col-md-6 footer-links">
             <h4>Useful Links</h4>
             <ul>
               <li><i class="ion-ios-arrow-right"></i> <a href="#">Home</a></li>
@@ -831,7 +846,7 @@
             </ul>
           </div>
 
-          <div class="col-lg-3 col-md-6 footer-contact">
+          <div class="col-lg-4 col-md-6 footer-contact">
             <h4>Contact Us</h4>
             <p>
               Level: 9, SEL Haque Skypark <br>
@@ -851,13 +866,13 @@
 
           </div>
 
-          <div class="col-lg-3 col-md-6 footer-newsletter">
+          <!-- <div class="col-lg-3 col-md-6 footer-newsletter">
             <h4>Our Newsletter</h4>
-            <!-- <p>Tamen quem nulla quae legam multos aute sint culpa legam noster magna veniam enim veniam illum dolore legam minim quorum culpa amet magna export quem marada parida nodela caramase seza.</p> -->
+            <p>Tamen quem nulla quae legam multos aute sint culpa legam noster magna veniam enim veniam illum dolore legam minim quorum culpa amet magna export quem marada parida nodela caramase seza.</p>
             <form action="" method="post">
               <input type="email" name="email"><input type="submit"  value="Subscribe">
             </form>
-          </div>
+          </div> -->
 
         </div>
       </div>
