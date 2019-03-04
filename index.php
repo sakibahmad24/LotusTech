@@ -1,9 +1,9 @@
-<?php
-  session_start();
-  include 'server.php';
+<!-- <?php
+//  session_start();
+  //include 'server.php';
 
 ?>
-
+ -->
 
 <!DOCTYPE html>
 <html lang="en">
